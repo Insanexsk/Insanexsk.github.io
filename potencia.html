@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Potencia</title>
+</head>
+<body>
+    <div class="container-all">
+        <div class="ctn-form">
+            <h1 class="title">Potencia</h1>
+            <input type="text" class="form-control" placeholder="Ingrese el valor" id="val1">
+            <br>
+            <br>
+            <input type="text" class="form-control" placeholder="Ingrese la potencia" id="pot">
+            <br>
+            <br>
+            <div id="opPotencia" style="color: white;"></div>
+            <br>
+            <input type="button" value="Calcular potencia" onclick="Potencia()">
+            <br>
+            <nav class="menu">
+                <a class="item" href="index.html">Regresar</a>
+            </nav>
+        
+            <script type="text/javascript">
+                function Potencia()
+                {
+                    const valor1 = document.getElementById('val1').value;
+                    const exponente = document.getElementById('pot').value;
+                    let R = 1;
+        
+                    for(let i = exponente; i > 0; i--){
+                        R = R * valor1;
+                    }
+        
+                    document.getElementById('opPotencia').innerHTML= valor1 + ' elevado a: ' + exponente + ' da como resultado: ' + R;
+                }
+            </script>
+        </div>
+    </div>    
+</body>
+</html>

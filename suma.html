@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Suma</title>
+</head>
+<body>
+    <div class="container-all">
+        <div class="ctn-form">
+            <h1 class="title">Suma</h1>
+            <input type="text" id="sum1" size="1" placeholder="Valor 1">
+            <br>
+            <br>
+            <input type="text" id="sum2" size="1" placeholder="Valor 2">
+            <br>
+            <br>
+            <div id="resum" style="color: white;"></div>
+            <br>
+            <input type="button" value="Calcular Suma" onclick="sum()">
+            <br>
+            <nav class="menu">
+                <a class="item" href="index.html">Regresar</a>
+            </nav>
+
+            
+
+            <script type="text/javascript">
+                function sum(){
+                    var suma1=parseInt(document.getElementById('sum1').value);
+                    var suma2=parseInt(document.getElementById('sum2').value);
+                    var sumar=(suma1 + suma2);
+                    document.getElementById('resum').innerHTML='El resultado es: ' + sumar;
+                }
+            </script>
+
+        </div>
+    </div>    
+</body>
+</html>

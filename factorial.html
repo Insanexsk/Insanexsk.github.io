@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Factorial</title>
+</head>
+<body>
+    <div class="container-all">
+        <div class="ctn-form">
+            <h1 class="title">Factorial</h1>
+            <input type="text" id="fact" size="1" placeholder="Ingresa el valor">
+            <br>
+            <br>
+            <div id="opFact" style="color: white;"></div>
+            <br>
+            <input type="button" value="Calcular Factorial" onclick="factorial()">
+            <br>
+            <nav class="menu">
+                <a class="item" href="index.html">Regresar</a>
+            </nav>
+        
+            <script type="text/javascript">
+                function factorial()
+                {
+                    const fact1 = document.getElementById('fact').value;
+                    let R = 1;
+                    for(let i = fact1; i>0; i--){
+                        R *= i;
+                    }
+        
+                    document.getElementById('opFact').innerHTML= 'El factorial de: ' + fact1 + ' es: ' + R;
+                }
+            </script>
+        </div>
+    </div>    
+</body>
+</html>

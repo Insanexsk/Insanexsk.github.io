@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-all {
+    margin-top: 100px;
+    display: flex;
+    overflow: hidden;
+}
+
+.ctn-form {
+    margin: auto;
+    border-radius: 20px;
+    background: rgba(4, 4, 4, 0.418);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 40px;
+    /*background: #f7f7f7;*/
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.menu{
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.item{
+    height: 46px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-size: 18px;
+    line-height: 46px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    display: block;
+}
+
+.back-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 46px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.item:nth-of-type(1):hover ~ .back-menu{
+    transform: translateY(0);
+}
+
+.item:nth-of-type(2):hover ~ .back-menu{
+    transform: translateY(calc(100% * 1));
+}
+
+.item:nth-of-type(3):hover ~ .back-menu{
+    transform: translateY(calc(100% * 2));
+}
+
+.item:nth-of-type(4):hover ~ .back-menu{
+    transform: translateY(calc(100% * 3));
+}
+
+.item:nth-of-type(5):hover ~ .back-menu{
+    transform: translateY(calc(100% * 4));
+}
+
+.item:nth-of-type(6):hover ~ .back-menu{
+    transform: translateY(calc(100% * 5));
+}
+
+.item:nth-of-type(7):hover ~ .back-menu{
+    transform: translateY(calc(100% * 6));
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: white;
+    font-size: 16px;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 10px;
+    border: 0px;
+    background: rgba(4, 4, 4, 0.418);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.4);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="Button"]:hover {
+    background: rgba(54, 54, 54, 0.3);
+    backdrop-filter: blur(10px);
+}
